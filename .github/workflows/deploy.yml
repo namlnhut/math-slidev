@@ -32,13 +32,9 @@ jobs:
       - run: pnpm install
 
       - name: Build slides
-        run: pnpm build
+        run: pnpm build --base /${{ github.event.repository.name }}/
         env:
-          VITE_BASE: /${{ github.event.repository.name }}/
           NODE_OPTIONS: --max-old-space-size=4096
-
-      - name: Add 404 fallback for SPA routing
-        run: cp dist/index.html dist/404.html
 
       - uses: actions/upload-pages-artifact@v3
         with:
