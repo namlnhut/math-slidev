@@ -1,0 +1,39 @@
+/*
+ * KaTeX customisations — position/layout of \tag{n} is handled
+ * natively by KaTeX (position:absolute; right:0 on .katex-html).
+ * We only override sizing, spacing, and colour here.
+ */
+
+/* ── General sizing & spacing ─────────────────────────────── */
+
+.katex {
+  font-size: 1em;
+}
+
+.katex-display > .katex {
+  font-size: 1.05em;
+}
+
+.katex-html {
+  white-space: nowrap;
+}
+
+/* Display equation margin (tighter than KaTeX's default 1em) */
+.katex-display {
+  margin: 0.6em 0;
+}
+
+/* \tag{n} colour — KaTeX already positions it correctly */
+.katex-display .tag {
+  color: #555;
+  font-size: 0.82em;
+}
+
+/* Inside math-block bodies */
+.math-block-body .katex {
+  font-size: 0.97em;
+}
+
+.math-block-body .katex-display {
+  margin: 0.4em 0;
+}
