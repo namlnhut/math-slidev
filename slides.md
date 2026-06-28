@@ -8,6 +8,7 @@ drawings:
   persist: false
 transition: slide-left
 hideInToc: true
+routerMode: history
 ---
 
 # Mathematical Slide Template
