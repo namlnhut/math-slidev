@@ -1,13 +1,13 @@
 ---
 theme: seriph
 layout: cover
-background: https://cover.sli.dev
 title: Mathematical Slide Template
 class: text-center
 drawings:
   persist: false
 transition: slide-left
 hideInToc: true
+routerMode: history
 ---
 
 # Mathematical Slide Template
