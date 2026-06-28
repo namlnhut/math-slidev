@@ -48,6 +48,7 @@ async function getSlideMap(entry: string): Promise<Map<number, string>> {
 }
 
 export default defineConfig({
+  base: process.env.VITE_BASE ?? '/',
   slidev: {
     markdown: {
       transforms: {
